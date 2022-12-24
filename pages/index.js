@@ -11,11 +11,11 @@ export default function Home() {
       title="Nevin Alisheva - Junior Full Stack Developer"
       description="Lorem Ipsum.. DESCRIPTION"
     >
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <h1 className="text-3xl font-bold underline">Hi all, I am Nevin👋!</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti error
-        eos ratione natus ut quas sed culpa, minus libero numquam eligendi
-        provident laudantium cumque quis ad maiores iusto praesentium explicabo.
+        A passionate Full Stack Web Developer having an experience of building
+        Web and Mobile applications with JavaScript / Reactjs / Nodejs / Nextjs
+        and some other cool libraries and frameworks.
       </p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti error
