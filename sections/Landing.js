@@ -1,8 +1,15 @@
 import { TypeAnimation } from "react-type-animation";
+import Link from "next/link";
 const Landing = () => {
+    const scrollDown = () => {
+    window.scrollTo(5000, {
+      duration: 1100, //* IF Lesser = Quicker | IF Higher = Slower
+      smooth: "easeOutSine", //* Some smooth effects based on documentation here: https://easings.net/ and https://www.npmjs.com/package/react-scroll
+    });
+  };
   return (
-    <div>
-    <div class="antialiased overflow-hidden flex items-center justify-center bg-landing h-screen w-screen object-cover relative top-0 filter contrast-125">
+    <div className="bg-landing h-screen w-screen object-cover relative top-0 filter contrast-125">
+    <div class="antialiased overflow-hidden flex items-center justify-center ">
       {/* <section>
         <h1>Staggered (with delay prop and custom styling)</h1>
         <div>
@@ -52,9 +59,9 @@ const Landing = () => {
         repeat={Infinity}
         style={{ fontSize: "2em" }}
       />
-      
+      </div>
     <div class="w-full h-full mx-auto p-20 bg-transparent">
-  <button class="bg-none cursor-pointer inline-block flex-shrink-0 text-2xl py-3 px-3 relative text-white no-underline z-10 font-bold
+  <button onClick={scrollDown} class="bg-none cursor-pointer inline-block flex-shrink-0 text-2xl py-3 px-3 relative text-white no-underline z-10 font-bold
     before:bg-gray-800 before:h-full before:absolute before:w-full before:-z-10 before:top-3 before:right-3
     after:border-white after:border-solid after:border-2 after:h-full after:opacity-100 after:absolute after:top-0 after:right-0 after:w-full
     hover:before:translate-x-3 hover:before:-translate-y-3
@@ -63,11 +70,11 @@ const Landing = () => {
     hover:after:transition-transform hover:after:duration-500 hover:after:ease-in
     after:transition-transform after:duration-500
     before:transition-transform before:duration-500
-    ">SEE MORE
+    " >See more
   </button>
 </div>
 </div>
-</div>
+
   );
 };
 
