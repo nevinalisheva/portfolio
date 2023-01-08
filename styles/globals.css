@@ -15,6 +15,9 @@
   .btn {
     @apply inline-block px-5 py-3 rounded-lg hover:bg-indigo-600 transition duration-300 shadow-lg bg-indigo-500 text-white capitalize tracking-wider font-semibold text-sm sm:text-xl focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50 whitespace-nowrap;
   }
+  html {
+    @apply scroll-smooth;
+  }
 }
 
 html,
@@ -43,3 +46,18 @@ body {
     background: black;
   }
 } */
+.my-shuffle .shuffle-text-char {
+  animation: 0.5s ease-in-out both myWordEnter; /* none for no effect */
+}
+ 
+@keyframes myWordEnter {
+  0% {
+    opacity: 0;
+    transform: translate(-100%, 0) scale(5);
+  }
+ 
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}

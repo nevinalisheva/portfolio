@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Landing from "../sections/Landing";
 
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
@@ -43,6 +44,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
         )} */}
       </Head>
       <main>
+        <Landing />
         {/* className="dark:bg-gray-900 w-full" */}
         <Navbar />
         <div>{children}</div>

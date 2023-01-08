@@ -14,11 +14,23 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
-      <div className="flex  md:flex-row justify-between items-center">
-        <Link href="/">Home</Link>
-        <Link href="/experience">Experience/Projects</Link>
-        <Link href="/about">About Me/Contact</Link>
+    <div
+      className={`${
+        theme === "dark"
+          ? "bg-gradient-to-r from-violet-400 to-violet-700  shadow-violet-400 shadow-2xl"
+          : "bg-gradient-to-r from-violet-200 to-purple-400  shadow-2xl"
+      } sticky top-0 max-w-6xl  mx-auto px-4 py-5 md:py-8 z-20 rounded-lg`}
+    >
+      <div className="flex  md:flex-row justify-between items-center  ">
+        <Link href="/" className="text-xl font-bold ">
+          Home
+        </Link>
+        <Link href="#experience" className="text-xl font-bold">
+          Experience/Projects
+        </Link>
+        <Link href="#about" className="text-xl font-bold">
+          About Me/Contact
+        </Link>
 
         <button
           aria-label="Toggle Dark Mode"

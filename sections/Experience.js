@@ -1,7 +1,7 @@
 const Experience = () => {
   return (
     
-    <section class="p-10 min-h-screen flex md:flex-row items-center justify-around bg-red-500 flex-wrap sm:flex-col">
+    <section id="experience" class="p-10 min-h-screen flex md:flex-row items-center justify-around bg-transparent flex-wrap sm:flex-col">
       <div class="h-32 w-32 relative cursor-pointer mb-5">
         <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
         <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
