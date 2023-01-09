@@ -1,8 +1,9 @@
 import BtnGoTop from "../components/ButtontoTop";
 import ContainerBlock from "../components/ContainerBlock";
 import About from "../sections/About";
+import Contact from "../sections/Contact";
 import Experience from "../sections/Experience";
-import Landing from "../sections/Landing";
+import Introduction from "../sections/Intro";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -12,39 +13,23 @@ export default function Home() {
         title="Nevin Alisheva - Junior Full Stack Developer"
         description="Lorem Ipsum.. DESCRIPTION"
       >
-        <blockquote class="text-2xl font-semibold italic text-center text-slate-900">
-          When you look
-          <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
-            <span class="relative text-white"> annoyed</span>
-          </span>
-          all the time, people think that you are busy.
-        </blockquote>
-        <BtnGoTop  />
+        <Introduction />
+        <div className="w-11/12 mx-auto h-0.5 bg-violet-300"></div>
+        <BtnGoTop />
         <Experience />
+        <div className="w-11/12 mx-auto h-0.5 bg-violet-300"></div>
+
         <About />
+        <div className="w-11/12 mx-auto h-0.5 bg-violet-300"></div>
+
         <h3 class="text-3xl font-bold text-indigo-500 animate-bounce">
           Tailwind CSS Animation
         </h3>
-        {/* <h3 class="text-3xl font-bold text-indigo-500 animate-ping">
-        Tailwind CSS Animation
-      </h3> */}
-        {/* <div class="w-20 h-20 p-2 bg-blue-500 rounded-md animate-spin"></div>
+        <div class="w-20 h-20 p-2 bg-blue-500 rounded-md animate-spin"></div>
       <div class="w-20 h-20 p-2 bg-purple-500 rounded-md animate-ping"></div>
       <div class="w-20 h-20 p-2 bg-green-500 rounded-md animate-bounce"></div>
-      <div class="w-20 h-20 p-2 bg-purple-500 rounded-md animate-pulse"></div> */}
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          error eos ratione natus ut quas sed culpa, minus libero numquam
-          eligendi provident laudantium cumque quis ad maiores iusto praesentium
-          explicabo.
-        </p>
-        <div class="h-14 bg-gradient-to-r from-sky-500 to-indigo-500"></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          error eos ratione natus ut quas sed culpa, minus libero numquam
-          eligendi provident laudantium cumque quis ad maiores iusto praesentium
-          explicabo.
-        </p>
+      <div class="w-20 h-20 p-2 bg-purple-500 rounded-md animate-pulse"></div>
+      
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="w-12 h-12 text-gray-600 animate-spin"
@@ -65,72 +50,11 @@ export default function Home() {
             d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
           />
         </svg>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          error eos ratione natus ut quas sed culpa, minus libero numquam
-          eligendi provident laudantium cumque quis ad maiores iusto praesentium
-          explicabo.
-        </p>
-        {/* <div className={styles.container}>
-        <main className={styles.main}>
-          <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
-              <h2>Documentation &rarr;</h2>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
 
-            <a href="https://nextjs.org/learn" className={styles.card}>
-              <h2>Learn &rarr;</h2>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
+       
 
-            <a
-              href="https://github.com/vercel/next.js/tree/canary/examples"
-              className={styles.card}
-            >
-              <h2>Examples &rarr;</h2>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
-            </a>
-
-            <a
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.card}
-            >
-              <h2>Deploy &rarr;</h2>
-              <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </a>
-          </div>
-        </main> */}
-        {/* <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{" "}
-            <span className={styles.logo}>
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                width={72}
-                height={16}
-              />
-            </span>
-          </a>
-        </footer> */}
-        {/* </div> */}
-        <div class="bg-landing">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
-            officiis fugiat, nulla quasi, perferendis ratione similique
-            quibusdam ea ducimus possimus nesciunt aspernatur aliquam aut quam,
-            minus cumque repudiandae cupiditate magnam.
-          </p>
-        </div>
+        <Contact />
+        <div className="w-11/12 mx-auto h-0.5 bg-violet-300"></div>
       </ContainerBlock>
     </div>
   );

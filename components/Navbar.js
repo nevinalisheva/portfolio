@@ -3,11 +3,10 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 
-export default function Navbar() {
+export default function Navbar({theme, setTheme, mounted, setMounted}) {
   const router = useRouter();
-  console.log(router.asPath);
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  // console.log(router.asPath);
+  
 
   useEffect(() => {
     setMounted(true);
@@ -17,9 +16,9 @@ export default function Navbar() {
     <div
       className={`${
         theme === "dark"
-          ? "bg-gradient-to-r from-violet-400 to-violet-700  shadow-violet-400 shadow-2xl"
+          ? "bg-gradient-to-r from-violet-300 to-neutral-900  shadow-stone-700 shadow-md"
           : "bg-gradient-to-r from-violet-200 to-purple-400  shadow-2xl"
-      } sticky top-0 max-w-6xl  mx-auto px-4 py-5 md:py-8 z-20 rounded-lg`}
+      } sticky top-0 px-4 py-4 md:py-8 z-20 `}
     >
       <div className="flex  md:flex-row justify-between items-center  ">
         <Link href="/" className="text-xl font-bold ">

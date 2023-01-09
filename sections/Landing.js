@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
-const Landing = () => {
+const Landing = ({theme}) => {
     const scrollDown = () => {
     window.scrollTo(5000, {
       duration: 1100, //* IF Lesser = Quicker | IF Higher = Slower
@@ -8,9 +8,13 @@ const Landing = () => {
     });
   };
   return (
-    <div className="bg-landing h-screen w-screen object-cover relative top-0 filter contrast-125">
-    <div class="antialiased overflow-hidden flex items-center justify-center ">
-      {/* <section>
+    <div
+      className={` ${
+        theme === "dark" ? "bg-landing-dark" : "bg-landing"
+      }  max-w-6xl  mx-auto  h-screen w-screen object-cover relative top-0 filter contrast-125 flex items-center justify-center`}
+    >
+      <div class="antialiased overflow-hidden  h-screen w-screen object-cover relative top-0 filter contrast-125 flex items-center justify-center ">
+        {/* <section>
         <h1>Staggered (with delay prop and custom styling)</h1>
         <div>
           <TextLoop mask={true} fade={false}>
@@ -30,51 +34,56 @@ const Landing = () => {
           </TextLoop>
         </div>
       </section> */}
-      <TypeAnimation
-        className=" inline-flex font-semibold text-white space-y-8 items-center justify-center"
-        sequence={[
-          "I am Nevin Alisheva.", // Types 'One'
-          1000, // Waits 1s
-          "I am a full stack developer.", // Deletes 'One' and types 'Two'
-          2000, // Waits 2s
-          "I am looking for a job.", // Types 'Three' without deleting 'Two'
-          1000, // Waits 2s
-          "I am currently doing a bootcamp.",
-          1000,
-          "I live in Berlin.",
-          1000, // Waits 2s
-          "I love coding.",
-          1000, // Waits 2s
-          "I like team sports.",
-          1000, // Waits 2s
-          "I play the piano.",
-          1000,
+        <TypeAnimation
+          className=" inline-flex font-semibold text-purple-200 space-y-8 items-center justify-center"
+          sequence={[
+            "I am Nevin Alisheva.", // Types 'One'
+            1000, // Waits 1s
+            "I am a full stack developer.", // Deletes 'One' and types 'Two'
+            2000, // Waits 2s
+            "I am looking for a job.", // Types 'Three' without deleting 'Two'
+            1000, // Waits 2s
+            "I am currently doing a bootcamp.",
+            1000,
+            "I live in Berlin.",
+            1000, // Waits 2s
+            "I love coding.",
+            1000, // Waits 2s
+            "I like team sports.",
+            1000, // Waits 2s
+            "I play the piano.",
+            1000,
 
-          () => {
-            console.log("Done typing!"); // Place optional callbacks anywhere in the array
-          },
-        ]}
-        wrapper="div"
-        cursor={true}
-        repeat={Infinity}
-        style={{ fontSize: "2em" }}
-      />
+            () => {
+              console.log("Done typing!"); // Place optional callbacks anywhere in the array
+            },
+          ]}
+          wrapper="div"
+          cursor={true}
+          repeat={Infinity}
+          style={{ fontSize: "2em" }}
+        />
       </div>
-    <div class="w-full h-full mx-auto p-20 bg-transparent">
-  <button onClick={scrollDown} class="bg-none cursor-pointer inline-block flex-shrink-0 text-2xl py-3 px-3 relative text-white no-underline z-10 font-bold
-    before:bg-gray-800 before:h-full before:absolute before:w-full before:-z-10 before:top-3 before:right-3
+      <div class="bg-transparent absolute inset-y-2/3">
+        <Link href="#about">
+          <button
+            class={`${
+              theme === "dark" ? "before:bg-dark_btn" : "before:bg-purple-300"
+            } bg-none cursor-pointer inline-block flex-shrink-0 text-2xl py-3 px-3 relative text-white no-underline z-10 font-bold
+     before:h-full before:absolute before:w-full before:-z-10 before:top-3 before:right-3
     after:border-white after:border-solid after:border-2 after:h-full after:opacity-100 after:absolute after:top-0 after:right-0 after:w-full
     hover:before:translate-x-3 hover:before:-translate-y-3
     hover:after:-translate-x-3 hover:after:translate-y-3
     hover:before:transition-transform hover:before:duration-500 hover:before:ease-in
     hover:after:transition-transform hover:after:duration-500 hover:after:ease-in
     after:transition-transform after:duration-500
-    before:transition-transform before:duration-500
-    " >See more
-  </button>
-</div>
-</div>
-
+    before:transition-transform before:duration-500`}
+          >
+            Find out more
+          </button>
+        </Link>
+      </div>
+    </div>
   );
 };
 

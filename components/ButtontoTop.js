@@ -16,8 +16,8 @@ const BtnGoTop = () => {
   //* Method 2: Scroll to top using react-scroll | Currently using
   const scrollToTop = () => {
     scroll.scrollTo(0, {
-      duration: 1100, //* IF Lesser = Quicker | IF Higher = Slower
-      smooth: "easeOutSine", //* Some smooth effects based on documentation here: https://easings.net/ and https://www.npmjs.com/package/react-scroll
+      duration: 100, //* IF Lesser = Quicker | IF Higher = Slower
+      smooth: "easeOutQuint", //* Some smooth effects based on documentation here: https://easings.net/ and https://www.npmjs.com/package/react-scroll
     });
   };
 
@@ -39,7 +39,7 @@ const BtnGoTop = () => {
       {showScrollIcon && (
         <span
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 bg-violet-300 border rounded-full p-[2px]"
+          className="cursor-pointer fixed bottom-4 right-4 bg-violet-300 border rounded-full p-[2px]"
         >
           <ArrowUp className="fill-white" />
         </span>

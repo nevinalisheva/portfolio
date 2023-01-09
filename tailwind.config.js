@@ -10,8 +10,12 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-       backgroundImage: {
-        'landing': "url('https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80')",
+      colors: { dark_btn: "rgb(125 115 147 )" },
+      backgroundImage: {
+        landing:
+          "url('https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80')",
+        "landing-dark":
+          "url('https://images.unsplash.com/photo-1527049979667-990f1d0d8e7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80')",
       },
       keyframes: {
         wave: {

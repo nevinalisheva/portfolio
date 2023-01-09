@@ -1,12 +1,16 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { useTheme } from "next-themes";
+import { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Landing from "../sections/Landing";
 
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   const meta = {
     title: "Nevin Alisheva - Junior Full Stack Developer",
@@ -44,9 +48,14 @@ export default function ContainerBlock({ children, ...customMeta }) {
         )} */}
       </Head>
       <main>
-        <Landing />
+        <Landing theme={theme} />
         {/* className="dark:bg-gray-900 w-full" */}
-        <Navbar />
+        <Navbar
+          theme={theme}
+          setTheme={setTheme}
+          mounted={mounted}
+          setMounted={setMounted}
+        />
         <div>{children}</div>
         <Footer />
       </main>
