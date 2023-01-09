@@ -1,12 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import Link from "next/link";
-import { useTheme } from "next-themes";
-import { useRouter } from "next/router";
 
 export default function Navbar({theme, setTheme, mounted, setMounted}) {
-  const router = useRouter();
-  // console.log(router.asPath);
-  
 
   useEffect(() => {
     setMounted(true);
@@ -43,7 +38,7 @@ export default function Navbar({theme, setTheme, mounted, setMounted}) {
               viewBox="0 0 24 24"
               fill="currentColor"
               stroke="currentColor"
-              className="w-4 h-4 text-yellow-500 dark:text-yellow-500"
+              className="w-6 h-6 animate-bounce text-yellow-500 dark:text-yellow-500"
             >
               {theme === "dark" ? (
                 <path
@@ -67,48 +62,3 @@ export default function Navbar({theme, setTheme, mounted, setMounted}) {
     </div>
   );
 }
-
-// import { SunIcon, MoonIcon } from "@heroicons/react/solid";
-
-// const Navbar = () => {
-//   const { systemTheme, theme, setTheme } = useTheme();
-//   const [mounted, setMounted] = useState(false);
-
-//   useEffect(() => {
-//     setMounted(true);
-//   }, []);
-
-//   const renderThemeChanger = () => {
-//     if (!mounted) return null;
-
-//     const currentTheme = theme === "system" ? systemTheme : theme;
-
-//     if (currentTheme === "dark") {
-//       return (
-//         <SunIcon
-//           className="w-10 h-10 text-yellow-500 "
-//           role="button"
-//           onClick={() => setTheme("light")}
-//         />
-//       );
-//     } else {
-//       return (
-//         <MoonIcon
-//           className="w-10 h-10 text-gray-900 "
-//           role="button"
-//           onClick={() => setTheme("dark")}
-//         />
-//       );
-//     }
-//   };
-
-//   return (
-//     <header className="h-15 shadow-sm dark:border-gray-700">
-//       <div className="container  px-4 sm:px-6 py-4 flex justify-between items-center">
-//         {renderThemeChanger()}
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Navbar;

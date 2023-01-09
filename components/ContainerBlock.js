@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
@@ -49,7 +48,6 @@ export default function ContainerBlock({ children, ...customMeta }) {
       </Head>
       <main>
         <Landing theme={theme} />
-        {/* className="dark:bg-gray-900 w-full" */}
         <Navbar
           theme={theme}
           setTheme={setTheme}

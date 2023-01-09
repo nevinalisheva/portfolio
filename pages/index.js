@@ -1,5 +1,6 @@
 import BtnGoTop from "../components/ButtontoTop";
 import ContainerBlock from "../components/ContainerBlock";
+import Seperator from "../components/Seperator";
 import About from "../sections/About";
 import Contact from "../sections/Contact";
 import Experience from "../sections/Experience";
@@ -14,22 +15,15 @@ export default function Home() {
         description="Lorem Ipsum.. DESCRIPTION"
       >
         <Introduction />
-        <div className="w-11/12 mx-auto h-0.5 bg-violet-300"></div>
+        <Seperator />
         <BtnGoTop />
         <Experience />
-        <div className="w-11/12 mx-auto h-0.5 bg-violet-300"></div>
-
+        <Seperator />
         <About />
-        <div className="w-11/12 mx-auto h-0.5 bg-violet-300"></div>
+        <Seperator />
+        {/* <div class="w-20 h-20 p-2 bg-purple-500 rounded-md animate-ping"></div> */}
+        <div class="w-20 h-20 p-2 bg-purple-500 rounded-md animate-pulse"></div>
 
-        <h3 class="text-3xl font-bold text-indigo-500 animate-bounce">
-          Tailwind CSS Animation
-        </h3>
-        <div class="w-20 h-20 p-2 bg-blue-500 rounded-md animate-spin"></div>
-      <div class="w-20 h-20 p-2 bg-purple-500 rounded-md animate-ping"></div>
-      <div class="w-20 h-20 p-2 bg-green-500 rounded-md animate-bounce"></div>
-      <div class="w-20 h-20 p-2 bg-purple-500 rounded-md animate-pulse"></div>
-      
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="w-12 h-12 text-gray-600 animate-spin"
@@ -51,10 +45,54 @@ export default function Home() {
           />
         </svg>
 
-       
-
         <Contact />
-        <div className="w-11/12 mx-auto h-0.5 bg-violet-300"></div>
+        <section className="bg-white dark:bg-gray-800">
+          <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
+            <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+              Projects
+            </h1>
+          </div>
+          {/* Grid starts here */}
+          <div className="bg-[#F1F1F1] dark:bg-gray-900">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+              <div className="github-repo">
+                <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
+                  latestRepo.name
+                </h1>
+                <p className="text-base font-normal my-4 text-gray-500">
+                  latestRepo.description
+                </p>
+                <a
+                  href={"latestRepo.clone_url:"}
+                  className="font-semibold group flex flex-row space-x-2 w-full items-center"
+                >
+                  <p>View Repository </p>
+                  <div className="transform  group-hover:translate-x-2 transition duration-300">
+                    &rarr;
+                  </div>
+                </a>
+              </div>
+              <a
+                href="https://tailwindmasterkit.com"
+                className="w-full block shadow-2xl"
+              >
+                <div className="relative overflow-hidden">
+                  <img
+                    src="/me.jpeg"
+                    alt="portfolio"
+                    className="transform hover:scale-125 transition duration-2000 ease-out"
+                  />
+                  <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+                    Tailwind Master Kit
+                  </h1>
+                  <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+                    01
+                  </h1>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
       </ContainerBlock>
     </div>
   );
