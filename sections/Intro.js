@@ -15,11 +15,12 @@ const Introduction = () => {
         <div className="px-14 ">
           <div >
             <div className="py-10">
-            <h1 className="text-3xl font-semibold ">
+              <h1 className="text-3xl font-semibold ">
               Hi all, </h1><h1 className="text-3xl font-semibold ">I am{" "}
               <span className="text-violet-300 tracking-wider">Nevin </span>
               <span class="animate-waving-hand inline-flex">👋🏻</span> !
-            </h1>
+              </h1>
+            </div>
             <p>
               A passionate{" "}
               <span class="before:block before:absolute before:-inset-1 before:-skew-y-2 before:bg-violet-300  relative inline-block">
