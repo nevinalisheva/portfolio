@@ -27,9 +27,9 @@ const About = () => {
           <div className="absolute inset-0 bg-landing opacity-25 rounded-lg shadow-2xl "></div>
           <div className="absolute inset-0 transform  hover:-translate-x-20 transition duration-300">
             <div className="h-full w-full bg-white dark:bg-landing rounded-lg shadow-2xl">
-              <SiNextdotjs size={50}/><h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
+              {/* <SiNextdotjs size={50}/><h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700"> */}
                   NextJS
-                </h1>
+                {/* </h1> */}
             </div>
           </div>
         </div>
@@ -105,7 +105,6 @@ const About = () => {
 };
 
 export default About;
-
 // <div className="px-8">
 //         <div className="flex flex-col space-y-8 items-start justify-start">
 //           <h1 className="font-mono text-7xl font-bold text-yellow-500 tracking-wide">
@@ -119,3 +118,4 @@ export default About;
 //           </h3>
 //         </div>
 //       </div>
+
