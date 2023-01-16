@@ -78,12 +78,12 @@ const Experience = () => {
 
       <section
         id="experience"
-        class="p-10 min-h-screen flex md:flex-row items-center justify-around bg-transparent flex-wrap sm:flex-col"
+        className="p-10 min-h-screen flex md:flex-row items-center justify-around bg-transparent flex-wrap sm:flex-col"
       >
-        <div class="h-72 md:w-1/2 w-72 relative cursor-pointer mb-5">
-          <div class="absolute inset-0 bg-landing opacity-25 rounded-lg shadow-2xl "></div>
-          <div class="absolute inset-0 transform  hover:-translate-x-20 transition duration-300">
-            <div class="h-full w-full bg-white rounded-lg shadow-2xl">
+        <div className="h-72 md:w-1/2 w-72 relative cursor-pointer mb-5">
+          <div className="absolute inset-0 bg-landing opacity-25 rounded-lg shadow-2xl "></div>
+          <div className="absolute inset-0 transform  hover:-translate-x-20 transition duration-300">
+            <div className="h-full w-full bg-white rounded-lg shadow-2xl">
               <div className="github-repo">
                 <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
                   Christmas in Berlin
@@ -108,53 +108,53 @@ const Experience = () => {
           </div>
         </div>
 
-        <div class="h-32 w-32 relative cursor-pointer mb-5">
-          <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
-          <div class="absolute inset-0 transform hover:rotate-90 hover:scale-75 transition duration-300">
-            <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+        <div className="h-32 w-32 relative cursor-pointer mb-5">
+          <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+          <div className="absolute inset-0 transform hover:rotate-90 hover:scale-75 transition duration-300">
+            <div className="h-full w-full bg-white rounded-lg shadow-2xl"></div>
           </div>
         </div>
 
-        <div class="h-32 w-32 relative cursor-pointer mb-5">
-          <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
-          <div class="absolute inset-0 transform  hover:rotate-45 transition duration-300">
-            <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+        <div className="h-32 w-32 relative cursor-pointer mb-5">
+          <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+          <div className="absolute inset-0 transform  hover:rotate-45 transition duration-300">
+            <div className="h-full w-full bg-white rounded-lg shadow-2xl"></div>
           </div>
         </div>
 
-        <div class="h-32 w-32 relative cursor-pointer mb-5">
-          <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
-          <div class="absolute inset-0 transform  hover:-rotate-45 transition duration-300">
-            <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+        <div className="h-32 w-32 relative cursor-pointer mb-5">
+          <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+          <div className="absolute inset-0 transform  hover:-rotate-45 transition duration-300">
+            <div className="h-full w-full bg-white rounded-lg shadow-2xl"></div>
           </div>
         </div>
 
-        <div class="h-32 w-32 relative cursor-pointer mb-5">
-          <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
-          <div class="absolute inset-0 transform origin-left hover:-rotate-45 transition duration-300">
-            <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+        <div className="h-32 w-32 relative cursor-pointer mb-5">
+          <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+          <div className="absolute inset-0 transform origin-left hover:-rotate-45 transition duration-300">
+            <div className="h-full w-full bg-white rounded-lg shadow-2xl"></div>
           </div>
         </div>
 
-        <div class="h-32 w-32 relative cursor-pointer mb-5">
-          <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
-          <div class="absolute inset-0 transform hover:-translate-x-10 transition duration-300">
-            <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+        <div className="h-32 w-32 relative cursor-pointer mb-5">
+          <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+          <div className="absolute inset-0 transform hover:-translate-x-10 transition duration-300">
+            <div className="h-full w-full bg-white rounded-lg shadow-2xl"></div>
           </div>
         </div>
 
-        <div class="h-32 w-32 relative cursor-pointer mb-5">
-          <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+        <div className="h-32 w-32 relative cursor-pointer mb-5">
+          <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
 
-          <div class="absolute inset-0 transform hover:rotate-90 hover:translate-x-full hover:scale-150 transition duration-300">
-            <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+          <div className="absolute inset-0 transform hover:rotate-90 hover:translate-x-full hover:scale-150 transition duration-300">
+            <div className="h-full w-full bg-white rounded-lg shadow-2xl"></div>
           </div>
         </div>
 
-        <div class="h-32 w-32 relative cursor-pointer mb-5">
-          <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
-          <div class="absolute inset-0 transform hover:skew-y-12 transition duration-300">
-            <div class="h-full w-full bg-white rounded-lg shadow-2xl"></div>
+        <div className="h-32 w-32 relative cursor-pointer mb-5">
+          <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+          <div className="absolute inset-0 transform hover:skew-y-12 transition duration-300">
+            <div className="h-full w-full bg-white rounded-lg shadow-2xl"></div>
           </div>
         </div>
       </section>

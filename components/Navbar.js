@@ -16,20 +16,20 @@ export default function Navbar({theme, setTheme, mounted, setMounted}) {
       } sticky top-0 px-4 py-4 md:py-8 z-20 `}
     >
       <div className="flex  md:flex-row justify-between items-center  ">
-        <Link href="/" className="text-xl font-bold ">
+        <Link href="/" className="sm:text-xl font-bold ">
           Home
         </Link>
-        <Link href="#experience" className="text-xl font-bold">
-          Experience/Projects
+        <Link href="#experience" className="sm:text-xl font-bold">
+          Projects
         </Link>
-        <Link href="#about" className="text-xl font-bold">
-          About Me/Contact
+        <Link href="#about" className="sm:text-xl font-bold">
+          Contact
         </Link>
 
         <button
           aria-label="Toggle Dark Mode"
           type="button"
-          className="w-10 h-10 p-3 rounded focus:outline-none"
+          className="sm:w-10 h-10 p-3 rounded focus:outline-none"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
           {mounted && (
