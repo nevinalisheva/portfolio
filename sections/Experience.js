@@ -5,7 +5,7 @@ const Experience = () => {
     <div>
       <section className="bg-white dark:bg-gray-800">
         <div className=" md:h-28 h-20 bg-white dark:bg-gray-800">
-          <h1 className=" text-2xl md:text-4xl font-bold py-20 text-center md:text-left p-14">
+          <h1 className=" text-2xl md:text-4xl font-bold py-20 text-center md:text-left p-14 animate-pulse">
             Projects
           </h1>
         </div>
@@ -23,7 +23,7 @@ const Experience = () => {
                 easy to see if the exact TV show is worth watching.
               </p>
               <Link
-              target='_blank'
+                target="_blank"
                 href="https://github.com/nevinalisheva/project-2-NEMURA"
                 className="font-semibold group flex flex-row space-x-2 w-full items-center"
               >
@@ -44,7 +44,7 @@ const Experience = () => {
                 code school.
               </p>
               <Link
-              target='_blank'
+                target="_blank"
                 href="https://github.com/nevinalisheva/firstHackathon"
                 className="font-semibold group flex flex-row space-x-2 w-full items-center"
               >
@@ -59,10 +59,13 @@ const Experience = () => {
                 TechTree
               </h1>
               <p className="text-base font-normal my-4 text-gray-500">
-                Gamifying your portfolio while making you discoverable for recruiters is the main idea behind TechTree. For this project I have been working with a small start-up team of developers from 'David Alexander Pfeiffer Software & IT'.
+                Gamifying your portfolio while making you discoverable for
+                recruiters is the main idea behind TechTree. For this project I
+                have been working with a small start-up team of developers from
+                'David Alexander Pfeiffer Software & IT'.
               </p>
               <Link
-              target='_blank'
+                target="_blank"
                 href="https://gitlab.com/cvgg/techtree"
                 className="font-semibold group flex flex-row space-x-2 w-full items-center"
               >
@@ -74,13 +77,16 @@ const Experience = () => {
             </div>
             <div className="github-repo p-4 border-4 border-violet-300 transform hover:scale-125 transition duration-2000 ease-out hover:backdrop-blur-md">
               <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
-                Berlinale FMA 
+                Berlinale FMA
               </h1>
               <p className="text-base font-normal my-4 text-gray-500">
-                A fleet management application for Berlinale workers, professionals and accredited visitors to the festival to facilitate travel between the various locations of the event! It was developed as a part of the 48h AWS hackathon.
+                A fleet management application for Berlinale workers,
+                professionals and accredited visitors to the festival to
+                facilitate travel between the various locations of the event! It
+                was developed as a part of the 48h AWS hackathon.
               </p>
               <Link
-              target='_blank'
+                target="_blank"
                 href="https://github.com/nevinalisheva/Berlinale-FMA"
                 className="font-semibold group flex flex-row space-x-2 w-full items-center"
               >
@@ -94,6 +100,6 @@ const Experience = () => {
         </div>
       </section>
     </div>
-  )
+  );
 }
  export default Experience;

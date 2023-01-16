@@ -54,7 +54,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
           mounted={mounted}
           setMounted={setMounted}
         />
-        <div>{children}</div>
+        <div >{children } </div>
         <Footer />
       </main>
     </div>

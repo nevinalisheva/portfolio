@@ -64,10 +64,10 @@ const Landing = ({theme}) => {
           style={{ fontSize: "2em" }}
         />
       </div>
-      <div class="bg-transparent absolute inset-y-2/3">
+      <div className="bg-transparent absolute inset-y-2/3">
         <Link href="#about">
           <button
-            class={`${
+            className={`${
               theme === "dark" ? "before:bg-dark_btn" : "before:bg-purple-300"
             } bg-none cursor-pointer inline-block flex-shrink-0 text-2xl py-3 px-3 relative text-white no-underline z-10 font-bold
      before:h-full before:absolute before:w-full before:-z-10 before:top-3 before:right-3

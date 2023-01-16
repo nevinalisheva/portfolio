@@ -7,7 +7,7 @@ import Experience from "../sections/Experience";
 import Introduction from "../sections/Intro";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Home({theme}) {
   return (
     <div>
       <ContainerBlock
@@ -22,9 +22,8 @@ export default function Home() {
         <About />
         <Seperator />
         {/* <div class="w-20 h-20 p-2 bg-purple-500 rounded-md animate-ping"></div> */}
-        <div class="w-20 h-20 p-2 bg-purple-500 rounded-md animate-pulse"></div>
 
-        <svg
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           class="w-12 h-12 text-gray-600 animate-spin"
           fill="none"
@@ -43,17 +42,17 @@ export default function Home() {
             stroke-width="2"
             d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
           />
-        </svg>
+        </svg> */}
 
-        <Contact />
-        <section className="bg-white dark:bg-gray-800">
+        <Contact theme={theme} />
+        {/* <section className="bg-white dark:bg-gray-800">
           <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
             <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
               Projects
             </h1>
-          </div>
-          {/* Grid starts here */}
-          <div className="bg-[#F1F1F1] dark:bg-gray-900">
+          </div> */}
+        {/* Grid starts here */}
+        {/* <div className="bg-[#F1F1F1] dark:bg-gray-900">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
               <div className="github-repo">
                 <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
@@ -92,7 +91,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </section>
+        </section> */}
       </ContainerBlock>
     </div>
   );
