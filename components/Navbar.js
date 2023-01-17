@@ -15,14 +15,29 @@ export default function Navbar({theme, setTheme, mounted, setMounted}) {
           : "bg-gradient-to-r from-violet-200 to-purple-400  shadow-2xl"
       } sticky top-0 px-4 py-4 md:py-8 z-20 `}
     >
-      <div className="flex  md:flex-row justify-between items-center  ">
-        <Link href="/" className="sm:text-xl font-bold ">
+      <div className="flex  md:flex-row justify-between md:justify-around items-center text-[#F1F1F1] ">
+        <Link href="/" className="sm:text-xl text-sm font-bold ">
           Home
         </Link>
-        <Link href="#experience" className="sm:text-xl font-bold">
+        <Link
+          href="#projects"
+          className="sm:text-xl text-sm font-bold "
+          scroll={false}
+        >
           Projects
         </Link>
-        <Link href="#about" className="sm:text-xl font-bold">
+        <Link
+          href="#skills"
+          scroll={false}
+          className="sm:text-xl text-sm font-bold"
+        >
+          Skills
+        </Link>
+        <Link
+          href="#contact"
+          className="sm:text-xl text-sm font-bold"
+          scroll={false}
+        >
           Contact
         </Link>
 

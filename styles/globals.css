@@ -25,6 +25,7 @@
 html,
 body {
   max-width: 72rem;
+  scroll-behavior: smooth;
   /* float: left; */
   padding: 0;
   margin: 0 auto; 

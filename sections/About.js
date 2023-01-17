@@ -13,7 +13,7 @@
 
 const About = () => {
   return (
-    <div id="about">
+    <div id="skills" className="scroll-smooth">
       <section className="bg-white dark:bg-gray-800">
         <div className=" md:h-28 h-20 bg-white dark:bg-gray-800">
           <h1 className=" text-2xl md:text-4xl font-bold py-20 text-center md:text-left p-14 animate-pulse">

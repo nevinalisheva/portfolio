@@ -65,7 +65,7 @@ const Landing = ({theme}) => {
         />
       </div>
       <div className="bg-transparent absolute inset-y-2/3">
-        <Link href="#about">
+        <Link href="#introduction" scroll={false}>
           <button
             className={`${
               theme === "dark" ? "before:bg-dark_btn" : "before:bg-purple-300"
@@ -77,7 +77,7 @@ const Landing = ({theme}) => {
     hover:before:transition-transform hover:before:duration-500 hover:before:ease-in
     hover:after:transition-transform hover:after:duration-500 hover:after:ease-in
     after:transition-transform after:duration-500
-    before:transition-transform before:duration-500`}
+    before:transition-transform before:duration-500 scroll-smooth`}
           >
             Find out more
           </button>
