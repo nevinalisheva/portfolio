@@ -12,7 +12,7 @@ const Experience = () => {
         {/* Grid starts here */}
         <div className="bg-[#F1F1F1] dark:bg-gray-900 p-14">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
-            <div className="github-repo p-4 border-4 border-violet-300 transform hover:scale-125 transition duration-2000 ease-out hover:backdrop-blur-md">
+            <div className="github-repo p-4 border-4 dark:border-violet-300 border-purple-300 transform hover:scale-125 transition duration-2000 ease-out hover:backdrop-blur-md">
               <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
                 NEMURA
               </h1>
@@ -33,7 +33,7 @@ const Experience = () => {
                 </div>
               </Link>
             </div>
-            <div className="github-repo p-4 border-4 border-violet-300 transform hover:scale-125 transition duration-2000 ease-out hover:backdrop-blur-md">
+            <div className="github-repo p-4 border-4 dark:border-violet-300 border-purple-300 transform hover:scale-125 transition duration-2000 ease-out hover:backdrop-blur-md">
               <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
                 Christmas in Berlin
               </h1>
@@ -54,7 +54,7 @@ const Experience = () => {
                 </div>
               </Link>
             </div>
-            <div className="github-repo p-4 border-4 border-violet-300 transform hover:scale-125 transition duration-2000 ease-out hover:backdrop-blur-md">
+            <div className="github-repo p-4 border-4 dark:border-violet-300 border-purple-300 transform hover:scale-125 transition duration-2000 ease-out hover:backdrop-blur-md">
               <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
                 TechTree
               </h1>
@@ -62,7 +62,7 @@ const Experience = () => {
                 Gamifying your portfolio while making you discoverable for
                 recruiters is the main idea behind TechTree. For this project I
                 have been working with a small start-up team of developers from
-                'David Alexander Pfeiffer Software & IT'.
+                P5-Technology.
               </p>
               <Link
                 target="_blank"
@@ -75,7 +75,7 @@ const Experience = () => {
                 </div>
               </Link>
             </div>
-            <div className="github-repo p-4 border-4 border-violet-300 transform hover:scale-125 transition duration-2000 ease-out hover:backdrop-blur-md">
+            <div className="github-repo p-4 border-4 dark:border-violet-300 border-purple-300 transform hover:scale-125 transition duration-2000 ease-out hover:backdrop-blur-md">
               <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
                 Berlinale FMA
               </h1>
