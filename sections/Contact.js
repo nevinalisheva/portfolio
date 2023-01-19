@@ -38,7 +38,7 @@ function Contact({theme}) {
     <div id="contact">
       <section className="bg-white dark:bg-neutral-900">
         <div className=" md:h-28 h-20 bg-white dark:bg-zinc-700">
-          <h1 className=" text-2xl md:text-4xl font-bold md:py-20 text-center md:text-left p-14 animate-pulse">
+          <h1 className=" text-2xl md:text-4xl font-bold md:py-20 text-center md:text-left p-12 sm:p-14 animate-pulse">
             Get in touch
           </h1>
         </div>

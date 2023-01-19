@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Experience = () => {
   return (
-    <div id="projects">
+    <div id="projects" className="pt-0 md:pt-16">
       <section className="bg-white dark:bg-neutral-900">
         <div className=" md:h-28 h-20 bg-white dark:bg-zinc-700">
           <h1 className=" text-2xl md:text-4xl font-bold md:py-20 text-center md:text-left p-14 animate-pulse">
@@ -10,9 +10,9 @@ const Experience = () => {
           </h1>
         </div>
         {/* Grid */}
-        <div className="bg-[#F1F1F1] dark:bg-neutral-900 p-14 rounded-lg shadow-md dark:shadow-white">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
-            <div className="github-repo rounded-lg shadow-2xl bg-white dark:bg-black p-4 border-2 dark:border-violet-300 border-purple-300 transform hover:scale-125 transition duration-2000 ease-out hover:backdrop-blur-md">
+        <div className="bg-[#F1F1F1] dark:bg-neutral-900 p-8 sm:p-14 rounded-lg shadow-md dark:shadow-white">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-10 pb-20">
+            <div className="github-repo rounded-lg shadow-2xl bg-white dark:bg-black p-4 border-2 dark:border-violet-300 border-purple-300 transform hover:scale-110 transition duration-2000 ease-out hover:backdrop-blur-md">
               <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
                 NEMURA
               </h1>
@@ -33,7 +33,7 @@ const Experience = () => {
                 </div>
               </Link>
             </div>
-            <div className="github-repo rounded-lg shadow-2xl bg-white dark:bg-black p-4 border-2 dark:border-violet-300 border-purple-300 transform hover:scale-125 transition duration-2000 ease-out hover:backdrop-blur-md">
+            <div className="github-repo rounded-lg shadow-2xl bg-white dark:bg-black p-4 border-2 dark:border-violet-300 border-purple-300 transform hover:scale-110 transition duration-2000 ease-out hover:backdrop-blur-md">
               <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
                 Christmas in Berlin
               </h1>
@@ -54,7 +54,7 @@ const Experience = () => {
                 </div>
               </Link>
             </div>
-            <div className="github-repo rounded-lg shadow-2xl bg-white dark:bg-black p-4 border-2 dark:border-violet-300 border-purple-300 transform hover:scale-125 transition duration-2000 ease-out hover:backdrop-blur-md">
+            <div className="github-repo rounded-lg shadow-2xl bg-white dark:bg-black p-4 border-2 dark:border-violet-300 border-purple-300 transform hover:scale-110 transition duration-2000 ease-out hover:backdrop-blur-md">
               <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
                 TechTree
               </h1>
@@ -75,7 +75,7 @@ const Experience = () => {
                 </div>
               </Link>
             </div>
-            <div className="github-repo rounded-lg shadow-2xl bg-white dark:bg-black p-4 border-2 dark:border-violet-300 border-purple-300 transform hover:scale-125 transition duration-2000 ease-out hover:backdrop-blur-md">
+            <div className="github-repo rounded-lg shadow-2xl bg-white dark:bg-black p-4 border-2 dark:border-violet-300 border-purple-300 transform hover:scale-110 transition duration-2000 ease-out hover:backdrop-blur-md">
               <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
                 Berlinale FMA
               </h1>
