@@ -39,7 +39,7 @@ const BtnGoTop = () => {
       {showScrollIcon && (
         <span
           onClick={scrollToTop}
-          className="cursor-pointer fixed bottom-4 right-4 bg-violet-300 border rounded-full p-[2px]"
+          className="cursor-pointer fixed bottom-4 right-4 bg-purple-300 dark:bg-violet-300 border rounded-full p-[2px]"
         >
           <ArrowUp className="fill-white" />
         </span>

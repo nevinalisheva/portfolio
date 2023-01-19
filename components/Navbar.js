@@ -13,9 +13,9 @@ export default function Navbar({theme, setTheme, mounted, setMounted}) {
         theme === "dark"
           ? "bg-gradient-to-r from-violet-300 to-neutral-900  shadow-stone-700 shadow-md"
           : "bg-gradient-to-r from-violet-200 to-purple-400  shadow-2xl"
-      } sticky top-0 px-4 py-4 md:py-8 z-20 `}
+      } sticky top-0 px-4 py-2 sm:py-4 md:py-8 z-20 `}
     >
-      <div className="flex  md:flex-row justify-between md:justify-around items-center text-[#F1F1F1] ">
+      <div className="flex md:flex-row justify-between md:justify-around items-center text-[#F1F1F1] ">
         <Link href="/" className="sm:text-xl text-sm font-bold ">
           Home
         </Link>

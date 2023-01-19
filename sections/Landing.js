@@ -44,6 +44,10 @@ const Landing = ({theme}) => {
             "I am looking for a job.", // Types 'Three' without deleting 'Two'
             1000, // Waits 2s
             "I am currently doing a bootcamp.",
+            1000, // Waits 1s
+            "I am a problem solver.",
+            1000, // Waits 1s
+            "I am a team player.",
             1000,
             "I live in Berlin.",
             1000, // Waits 2s

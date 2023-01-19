@@ -41,15 +41,6 @@ body {
   box-sizing: border-box;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */
 .my-shuffle .shuffle-text-char {
   animation: 0.5s ease-in-out both myWordEnter; /* none for no effect */
 }
