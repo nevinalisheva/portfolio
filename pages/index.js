@@ -5,11 +5,9 @@ import About from "../sections/About";
 import Contact from "../sections/Contact";
 import Experience from "../sections/Experience";
 import Introduction from "../sections/Intro";
-import styles from "../styles/Home.module.css";
 
 export default function Home({theme}) {
   return (
-    <div>
       <ContainerBlock
         title="Nevin Alisheva - Junior Full Stack Developer"
         description="Lorem Ipsum.. DESCRIPTION"
@@ -23,6 +21,5 @@ export default function Home({theme}) {
         <Seperator />
         <Contact theme={theme} />
       </ContainerBlock>
-    </div>
   );
 }

@@ -15,6 +15,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
     title: "Nevin Alisheva - Junior Full Stack Developer",
     description: `Lorem Ipsum.. DESCRIPTION`,
     image: "/favicon.ico",
+    website: "nameofmywebsite.com",
     type: "website",
     ...customMeta,
   };
@@ -24,27 +25,13 @@ export default function ContainerBlock({ children, ...customMeta }) {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta
-          property="og:url"
-          content={`https://yourwebsite.com${router.asPath}`}
-        />
-        <link
-          rel="canonical"
-          href={`https://yourwebsite.com${router.asPath}`}
-        />
+        <meta property="og:url" content={`${meta.website}/${router.asPath}`} />
+        <link rel="canonical" href={`${meta.website}/${router.asPath}`} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Nevin Alisheva" />
+        <meta property="og:site_name" content={meta.title} />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
-        {/* <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@mannupaaji" />
-        <meta name="twitter:title" content={meta.title} />
-        <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} />
-        {meta.date && (
-          <meta property="article:published_time" content={meta.date} />
-        )} */}
       </Head>
       <main>
         <Landing theme={theme} />
@@ -54,7 +41,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
           mounted={mounted}
           setMounted={setMounted}
         />
-        <div >{children } </div>
+        <div>{children} </div>
         <Footer />
       </main>
     </div>

@@ -1,7 +1,4 @@
 import Image from "next/image";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import {SiCodewars} from "react-icons/si";
-import Link from "next/link";
 
 const Introduction = () => {
     return (
@@ -64,47 +61,6 @@ const Introduction = () => {
             challenges and to be a part of building solutions that make a real
             difference in the world.
           </p>
-        </div>
-        <div className="py-10">
-          <h2 className="text-md xs:text-2xl font-semibold px-4">
-            Contact Me:
-          </h2>
-          <div className="flex fold:grid">
-            <Link
-              target="_blank"
-              href="https://www.linkedin.com/in/nevin-alisheva-746730262/"
-              className="font-semibold px-3 py-2 mr-4 text-purple-300 dark:text-violet-300 hover:text-white hover:bg-purple-300 dark:hover:text-black dark:hover:bg-violet-300"
-            >
-              <i className="fab fa-linkedin"></i>
-              <FaLinkedin size={30} />
-              LinkedIn
-            </Link>
-            <Link
-              target="_blank"
-              href="https://github.com/nevinalisheva"
-              className="font-semibold px-3 py-2 mr-4 text-purple-300 dark:text-violet-300 hover:text-white hover:bg-purple-300 dark:hover:text-black dark:hover:bg-violet-300"
-            >
-              <i className="fab fa-github"></i>
-              <FaGithub size={30} />
-              GitHub
-            </Link>
-            <Link
-              target="_blank"
-              href="https://www.codewars.com/users/nevinalisheva"
-              className="font-semibold px-3 py-2 text-purple-300 dark:text-violet-300 hover:text-white hover:bg-purple-300 dark:hover:text-black dark:hover:bg-violet-300"
-            >
-              <i className="fas fa-code"></i>
-              <SiCodewars size={30} /> Codewars
-            </Link>
-            <Link
-              target="_blank"
-              href="/Nevin_Alisheva_CV.pdf"
-              download
-              className="px-3 py-2 text-purple-300 font-semibold dark:text-violet-300 hover:text-white hover:bg-purple-300 dark:hover:text-black dark:hover:bg-violet-300"
-            >
-              <i className="fas fa-file-download"></i> CV
-            </Link>
-          </div>
         </div>
       </div>
     );

@@ -5,7 +5,7 @@ export default function Navbar({theme, setTheme, mounted, setMounted}) {
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+  }, [setMounted]);
 
   return (
     <div
