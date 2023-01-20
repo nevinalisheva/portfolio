@@ -3,7 +3,7 @@ import { SiCodewars } from "react-icons/si";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <footer className="px-4 sm:px-6 py-6 mt-24 bg-[#F1F1F1] dark:bg-neutral-900 fold:block flex">
+    <footer className="px-4 sm:px-6 py-6 mt-24 bg-[#F1F1F1] dark:bg-neutral-900 flex flex-col justify-between items-center">
       <div className="flex">
         <Link
           target="_blank"
@@ -38,7 +38,7 @@ const Footer = () => {
           <i className="fas fa-file-download"></i> CV
         </Link>
       </div>
-      <div className="text-end text-sm text-gray-500">
+      <div className="text-sm text-gray-500">
         <span className="dark:text-gray-100 text-gray-900 font-bold text-lg ">
           {" "}
           Nevin ALISHEVA

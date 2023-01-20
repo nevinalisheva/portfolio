@@ -16,11 +16,14 @@ const Experience = () => {
               <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
                 NEMURA
               </h1>
-              <p className="text-base font-normal my-4 text-gray-500">
-                A Web app that allows you to search for any TV show and get
-                information about its actors/actresses, seasons/episodes as well
-                as its description. The nicest thing is the rating, so it is
-                easy to see if the exact TV show is worth watching.
+              <p className=" text-sm xs:text-md md:text-base font-normal my-4 text-gray-500">
+                NEMURA is a web application that allows you to search for any TV
+                show and get detailed information about its actors, seasons,
+                episodes, and overall rating. Whether you are looking for your
+                next binge-worthy series or simply want to know more about your
+                favorite shows, NEMURA makes it easy to find what you are
+                looking for. Built with the MERN stack, the app is fast,
+                responsive and user-friendly.
               </p>
               <Link
                 target="_blank"
@@ -37,11 +40,14 @@ const Experience = () => {
               <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
                 Christmas in Berlin
               </h1>
-              <p className="text-base font-normal my-4 text-gray-500">
-                A mobile-only Web app that shows you Christmas markets in your
-                district and an advent calendar for a special surprise! This
-                project was done in a 30 hour hackathon during training in Wild
-                code school.
+              <p className=" text-sm xs:text-md md:text-base font-normal my-4 text-gray-500">
+                Christmas in Berlin is a mobile-only web app that showcases
+                Christmas markets in your district and features an advent
+                calendar for a special surprise. Developed in a 30-hour
+                hackathon, it’s perfect for anyone looking to plan their holiday
+                season in Berlin. With a sleek design and easy-to-use interface,
+                the app is a must-have for anyone looking to explore the city
+                during the festive season.
               </p>
               <Link
                 target="_blank"
@@ -58,11 +64,14 @@ const Experience = () => {
               <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
                 TechTree
               </h1>
-              <p className="text-base font-normal my-4 text-gray-500">
-                Gamifying your portfolio while making you discoverable for
-                recruiters is the main idea behind TechTree. For this project I
-                have been working with a small start-up team of developers from
-                P5-Technology.
+              <p className=" text-sm xs:text-md md:text-base font-normal my-4 text-gray-500">
+                TechTree is a unique web application that aims to gamify your
+                portfolio and make you more discoverable to recruiters. Built
+                with a small startup team of developers from P5-Technology, the
+                app allows you to showcase your skills and projects in an
+                interactive and visually appealing way. Whether you are a
+                seasoned developer or just starting out, TechTree is a great way
+                to stand out in a crowded job market.
               </p>
               <Link
                 target="_blank"
@@ -79,11 +88,13 @@ const Experience = () => {
               <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
                 Berlinale FMA
               </h1>
-              <p className="text-base font-normal my-4 text-gray-500">
-                A fleet management application for Berlinale workers,
-                professionals and accredited visitors to the festival to
-                facilitate travel between the various locations of the event! It
-                was developed as a part of the 48h AWS hackathon.
+              <p className=" text-sm xs:text-md md:text-base font-normal my-4 text-gray-500">
+                Berlinale FMA is a fleet management application designed for
+                Berlinale workers, professionals and accredited visitors to the
+                festival. It facilitates travel between various locations of the
+                event and was developed as a part of the 48h AWS hackathon.
+                Built with a user-centric approach, the app is designed to make
+                your festival experience more efficient and enjoyable.
               </p>
               <Link
                 target="_blank"

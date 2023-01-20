@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Introduction = () => {
     return (
-      <div className="pb-10 md:mb-0 dark:bg-neutral-900 items-center rounded-lg shadow-md dark:shadow-white pt-16">
+      <div className="pb-10 md:mb-0 dark:bg-neutral-900 items-center rounded-lg shadow-md dark:shadow-white md:pt-30 pt-20">
         <div
           className="flex flex-col md:flex-row  pb-10 md:mb-0 dark:bg-neutral-900 items-center pt-4"
           id="introduction"

@@ -13,7 +13,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
 
   const meta = {
     title: "Nevin Alisheva - Junior Full Stack Developer",
-    description: `Lorem Ipsum.. DESCRIPTION`,
+    description: `Welcome to my developer portfolio, where you can find an overview of my skills, experience, and personal projects. I am a Junior Full Stack Developer with experience in JavaScript, React.js, Node.js and Next.js. I am passionate about coding and always eager to learn and grow in the field. Browse my projects and get in touch if you're interested in working together.`,
     image: "/favicon.ico",
     website: "nameofmywebsite.com",
     type: "website",
