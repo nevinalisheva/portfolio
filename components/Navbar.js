@@ -16,12 +16,12 @@ export default function Navbar({theme, setTheme, mounted, setMounted}) {
       } sticky top-0 px-4 py-2 sm:py-4 md:py-8 z-20 `}
     >
       <div className="flex md:flex-row justify-between md:justify-around items-center text-[#F1F1F1] ">
-        <Link href="/" className="sm:text-xl text-sm font-bold ">
+        <Link href="/" className="sm:text-xl text-sm font-bold fold:text-xs">
           Home
         </Link>
         <Link
           href="#projects"
-          className="sm:text-xl text-sm font-bold "
+          className="sm:text-xl text-sm font-bold fold:text-xs"
           scroll={false}
         >
           Projects
@@ -29,13 +29,13 @@ export default function Navbar({theme, setTheme, mounted, setMounted}) {
         <Link
           href="#skills"
           scroll={false}
-          className="sm:text-xl text-sm font-bold"
+          className="sm:text-xl text-sm font-bold fold:text-xs"
         >
           Skills
         </Link>
         <Link
           href="#contact"
-          className="sm:text-xl text-sm font-bold"
+          className="sm:text-xl text-sm font-bold fold:text-xs"
           scroll={false}
         >
           Contact

@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
-  purge: [
+  content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -10,7 +10,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      screens: { 'xs': '350px' },
+      screens: { 'fold':{ 'max': '350px' }},
       colors: { dark_btn: "rgb(125 115 147)" },
       backgroundImage: {
         landing:

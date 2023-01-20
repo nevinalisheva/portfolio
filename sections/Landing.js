@@ -3,8 +3,8 @@ import Link from "next/link";
 const Landing = ({theme}) => {
     const scrollDown = () => {
     window.scrollTo(5000, {
-      duration: 1100, //* IF Lesser = Quicker | IF Higher = Slower
-      smooth: "easeOutSine", //* Some smooth effects based on documentation here: https://easings.net/ and https://www.npmjs.com/package/react-scroll
+      duration: 1100,
+      smooth: "easeOutSine", 
     });
   };
   return (
@@ -13,54 +13,30 @@ const Landing = ({theme}) => {
         theme === "dark" ? "bg-landing-dark" : "bg-landing"
       }  max-w-6xl  mx-auto  h-screen w-screen object-cover relative top-0 filter contrast-125 flex items-center justify-center`}
     >
-      <div class="antialiased overflow-hidden  h-screen w-screen object-cover relative top-0 filter contrast-125 flex items-center justify-center ">
-        {/* <section>
-        <h1>Staggered (with delay prop and custom styling)</h1>
-        <div>
-          <TextLoop mask={true} fade={false}>
-            <span>Trade</span>
-            <span>Increase</span>
-            <span>Stock</span>
-          </TextLoop>
-          <TextLoop delay={500} mask={true} fade={false}>
-            <span>faster</span>
-            <span>sales</span>
-            <span>winners</span>
-          </TextLoop>
-          <TextLoop delay={1000} mask={true} fade={false}>
-            <span>in every category.</span>
-            <span>in something else.</span>
-            <span>in other category.</span>
-          </TextLoop>
-        </div>
-      </section> */}
+      <div className="antialiased overflow-hidden  h-screen w-screen object-cover relative top-0 filter contrast-125 flex items-center justify-center ">
         <TypeAnimation
           className=" inline-flex font-semibold text-purple-200 space-y-8 items-center justify-center"
           sequence={[
-            "I am Nevin Alisheva.", // Types 'One'
-            1000, // Waits 1s
-            "I am a full stack developer.", // Deletes 'One' and types 'Two'
-            2000, // Waits 2s
-            "I am looking for a job.", // Types 'Three' without deleting 'Two'
-            1000, // Waits 2s
+            "I am Nevin Alisheva.", 
+            1000, 
+            "I am a full stack developer.",
+            2000, 
+            "I am looking for a job.", 
+            1000, 
             "I am currently doing a bootcamp.",
-            1000, // Waits 1s
+            1000, 
             "I am a problem solver.",
-            1000, // Waits 1s
+            1000, 
             "I am a team player.",
             1000,
             "I live in Berlin.",
-            1000, // Waits 2s
+            1000,
             "I love coding.",
-            1000, // Waits 2s
+            1000, 
             "I like team sports.",
-            1000, // Waits 2s
+            1000, 
             "I play the piano.",
             1000,
-
-            () => {
-              console.log("Done typing!"); // Place optional callbacks anywhere in the array
-            },
           ]}
           wrapper="div"
           cursor={true}

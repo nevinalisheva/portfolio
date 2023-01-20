@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import {SiCodewars} from "react-icons/si"
+import {SiCodewars} from "react-icons/si";
+import Link from "next/link";
 
 const Introduction = () => {
     return (
@@ -22,19 +23,19 @@ const Introduction = () => {
           <div className="md:px-8 px-4 md:w-5/6 w-full">
             <div>
               <div className="py-10">
-                <h1 className="text-md xs:text-3xl font-semibold ">Hi all, </h1>
+                <h1 className="text-xl xs:text-3xl font-semibold ">Hi all, </h1>
                 <h1 className="text-xl xs:text-3xl font-semibold ">
                   I am{" "}
                   <span className="text-xl xs:text-3xl text-purple-300 dark:text-violet-300 tracking-wider">
                     Nevin{" "}
                   </span>
-                  <span class="animate-waving-hand inline-flex">👋🏻</span> !
+                  <span className="animate-waving-hand inline-flex">👋🏻</span> !
                 </h1>
               </div>
               <p className="xs:leading-10 leading-6 text-sm xs:text-md md:text-lg">
                 As a{" "}
-                <span class="before:block before:absolute before:-inset-1 before:-skew-y-2 before:bg-purple-300 dark:before:bg-violet-300  relative inline-block">
-                  <span class="relative text-white">
+                <span className="before:block before:absolute before:-inset-1 before:-skew-y-2 before:bg-purple-300 dark:before:bg-violet-300  relative inline-block">
+                  <span className="relative text-white">
                     {"  "}
                     Full Stack Web Developer
                   </span>
@@ -65,37 +66,44 @@ const Introduction = () => {
           </p>
         </div>
         <div className="py-10">
-          <h2 className="text-2xl font-semibold">Contact Me:</h2>
-          <div className="sm:flex block">
-            <a
+          <h2 className="text-md xs:text-2xl font-semibold px-4">
+            Contact Me:
+          </h2>
+          <div className="flex fold:grid">
+            <Link
+              target="_blank"
               href="https://www.linkedin.com/in/nevin-alisheva-746730262/"
-              className="px-3 py-2 mr-4 text-purple-300 dark:text-violet-300 hover:text-white hover:bg-purple-300"
+              className="font-semibold px-3 py-2 mr-4 text-purple-300 dark:text-violet-300 hover:text-white hover:bg-purple-300 dark:hover:text-black dark:hover:bg-violet-300"
             >
-              <i className="fab fa-linkedin"></i><FaLinkedin size={30}/>
+              <i className="fab fa-linkedin"></i>
+              <FaLinkedin size={30} />
               LinkedIn
-            </a>
-            <a
+            </Link>
+            <Link
+              target="_blank"
               href="https://github.com/nevinalisheva"
-              className="px-3 py-2 mr-4 text-purple-300 dark:text-violet-300 hover:text-white hover:bg-purple-300"
+              className="font-semibold px-3 py-2 mr-4 text-purple-300 dark:text-violet-300 hover:text-white hover:bg-purple-300 dark:hover:text-black dark:hover:bg-violet-300"
             >
               <i className="fab fa-github"></i>
               <FaGithub size={30} />
               GitHub
-            </a>
-            <a
+            </Link>
+            <Link
+              target="_blank"
               href="https://www.codewars.com/users/nevinalisheva"
-              className="px-3 py-2 text-purple-300 dark:text-violet-300 hover:text-white hover:bg-purple-300"
+              className="font-semibold px-3 py-2 text-purple-300 dark:text-violet-300 hover:text-white hover:bg-purple-300 dark:hover:text-black dark:hover:bg-violet-300"
             >
               <i className="fas fa-code"></i>
               <SiCodewars size={30} /> Codewars
-            </a>
-            <a
-              href="/cv.pdf"
+            </Link>
+            <Link
+              target="_blank"
+              href="/Nevin_Alisheva_CV.pdf"
               download
-              className="px-3 py-2 text-purple-300 dark:text-violet-300 hover:text-white hover:bg-purple-300"
+              className="px-3 py-2 text-purple-300 font-semibold dark:text-violet-300 hover:text-white hover:bg-purple-300 dark:hover:text-black dark:hover:bg-violet-300"
             >
               <i className="fas fa-file-download"></i> CV
-            </a>
+            </Link>
           </div>
         </div>
       </div>

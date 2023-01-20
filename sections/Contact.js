@@ -6,35 +6,6 @@ function Contact({theme}) {
     return <p>Thanks for reaching out!</p>;
   }
   return (
-    //     <div id="about">
-    //   <div className="bg-white dark:bg-gray-800">
-    //     <div className=" md:h-28 h-20 bg-white dark:bg-gray-800">
-    //       <h1 className=" text-2xl md:text-4xl font-bold py-20 text-center md:text-left p-14 animate-pulse">
-    //         Get in touch
-    //       </h1>
-    //     </div>
-    //   <form
-    //     onSubmit={handleSubmit}
-    //     method="POST"
-    //     action="https://formspree.io/f/mjvdvjej"
-    //   >
-    //     <label htmlFor="email">Email Address</label>
-    //     <input className="input" id="email" type="email" name="email" />
-    //     <ValidationError prefix="Email" field="email" errors={state.errors} />
-    //     <br />
-    //     <label htmlFor="email">Message</label>
-    //     <textarea className="input" id="message" name="message" />
-    //     <ValidationError
-    //       prefix="Message"
-    //       field="message"
-    //       errors={state.errors}
-    //     />
-    //     <button type="submit" disabled={state.submitting}>
-    //       Submit
-    //     </button>
-    //   </form>
-    // </div>
-    // </div>
     <div id="contact">
       <section className="bg-white dark:bg-neutral-900">
         <div className=" md:h-28 h-20 bg-white dark:bg-zinc-700">

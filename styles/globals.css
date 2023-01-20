@@ -6,8 +6,6 @@
   body {
     @apply bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100;
     @apply min-h-screen m-auto;
-
-
   }
 
   ::selection {
@@ -26,16 +24,11 @@ html,
 body {
   max-width: 72rem;
   scroll-behavior: smooth;
-  /* float: left; */
   padding: 0;
   margin: 0 auto; 
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-/* a {
-  color: inherit;
-  text-decoration: none;
-} */
 
 * {
   box-sizing: border-box;

@@ -5,7 +5,6 @@ import { animateScroll as scroll} from "react-scroll";
 const BtnGoTop = () => {
   const [showScrollIcon, setShowScrollIcon] = useState(false);
 
-  //* Method 1: Scroll to top do manually
   const scrollTop = () => {
     window.scrollTo({
       top: 0,
@@ -13,15 +12,13 @@ const BtnGoTop = () => {
     });
   };
 
-  //* Method 2: Scroll to top using react-scroll | Currently using
   const scrollToTop = () => {
     scroll.scrollTo(0, {
-      duration: 100, //* IF Lesser = Quicker | IF Higher = Slower
-      smooth: "easeOutQuint", //* Some smooth effects based on documentation here: https://easings.net/ and https://www.npmjs.com/package/react-scroll
+      duration: 100, 
+      smooth: "easeOutQuint", 
     });
   };
 
-  //* To display icon when scrolling vertically to bottom
   const updateScroll = () => {
     const scroll_position = window.scrollY;
 
