@@ -29,14 +29,14 @@ const Footer = () => {
           <i className="fas fa-code"></i>
           <SiCodewars size={20} />
         </Link>
-        <Link
+        {/* <Link
           target="_blank"
           href="/Nevin_Alisheva_CV.pdf"
           download
           className="px-3 py-2 text-purple-300 font-semibold dark:text-violet-300 hover:text-white hover:bg-purple-300 dark:hover:text-black dark:hover:bg-violet-300"
         >
           <i className="fas fa-file-download"></i> CV
-        </Link>
+        </Link> */}
       </div>
       <div className="text-sm text-gray-500">
         <span className="dark:text-gray-100 text-gray-900 font-bold text-lg ">
