@@ -22,7 +22,7 @@ const Experience = () => {
                 episodes, and overall rating. Whether you are looking for your
                 next binge-worthy series or simply want to know more about your
                 favorite shows, NEMURA makes it easy to find what you are
-                looking for. Built with the MERN stack, the app is fast,
+                looking for. The app is fast,
                 responsive and user-friendly.
               </p>
               <Link
